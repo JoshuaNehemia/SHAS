@@ -1,2 +1,3 @@
-# Flazziz
-Make fast custom quizes for me to study
+# Self Hosted Assesments Systems
+Make fast custom quizes
+
