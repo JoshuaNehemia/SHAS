@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formal Rigid Design System</title>
+    <link rel="stylesheet" href="root.css">
+</head>
+
+<body>
+    <!-- FORM SECTION -->
+    <div class="form-container">
+        <h1>Number 1</h1>
+        <form onsubmit="event.preventDefault();">
+            <div class="form-group">
+                test ukuran<input type="text" id="fullname" placeholder="Enter legal name">
+            </div>
+
+            <div class="form-group">
+                <label for="dept">Department</label>
+                <select id="dept">
+                    <option>Engineering</option>
+                    <option>Human Resources</option>
+                    <option>Operations</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Observation Notes</label>
+                <textarea id="notes" rows="4" placeholder="Enter detailed observations..."></textarea>
+                <div class="form-hint">Please keep remarks concise and objective.</div>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox"> I acknowledge the terms of data submission.
+                </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Record</button>
+        </form>
+    </div>
+
+</body>
+</html>

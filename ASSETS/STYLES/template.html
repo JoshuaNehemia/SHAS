@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formal Rigid Design System</title>
+    <link rel="stylesheet" href="root.css">
+</head>
+
+<body>
+
+    <h1>Rigid Design System</h1>
+    <p style="margin-bottom: 2rem;">A formal interface utilizing strictly square corners and a high-contrast palette.
+    </p>
+
+    <!-- CARDS SECTION -->
+    <h2>Info Cards</h2>
+    <div class="card-grid">
+        <div class="card status-process">
+            <div class="card-title">Quarterly Review</div>
+            <p>System analysis is currently underway. Please check <a href="#">the reports page</a> for live updates.
+            </p>
+            <br>
+            <button class="btn btn-primary">View Details</button>
+        </div>
+
+        <div class="card status-warn">
+            <div class="card-title">Storage Limit</div>
+            <p>Server capacity is reaching 85%. Action may be required soon to archive old logs.</p>
+        </div>
+
+        <div class="card status-fail">
+            <div class="card-title">Connection Error</div>
+            <p>Failed to establish a secure handshake with the legacy database.</p>
+        </div>
+    </div>
+
+    <!-- TABLE SECTION -->
+    <h2>Data Table</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Project Name</th>
+                    <th>Owner</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#1024</td>
+                    <td>Alpha Protocol</td>
+                    <td>J. Smith</td>
+                    <td><span class="badge badge-success">Active</span></td>
+                    <td><a href="#">Edit</a></td>
+                </tr>
+                <tr>
+                    <td>#1025</td>
+                    <td>Beta Interface</td>
+                    <td>M. Chen</td>
+                    <td><span class="badge badge-process">In Review</span></td>
+                    <td><a href="#">Edit</a></td>
+                </tr>
+                <tr>
+                    <td>#1026</td>
+                    <td>Gamma Core</td>
+                    <td>A. Doe</td>
+                    <td><span class="badge badge-fail">Failed</span></td>
+                    <td><a href="#">Retry</a></td>
+                </tr>
+                <tr>
+                    <td>#1027</td>
+                    <td>Delta Stream</td>
+                    <td>R. Al-Fayed</td>
+                    <td><span class="badge badge-warn">Pending</span></td>
+                    <td><a href="#">Approve</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- FORM SECTION -->
+    <h2>Formal Entry</h2>
+    <div class="form-container">
+        <form onsubmit="event.preventDefault();">
+            <div class="form-group">
+                <p>Test kalau mengisi</p>
+                <input type="text" id="fullname" placeholder="Enter legal name">
+            </div>
+
+            <div class="form-group">
+                <label for="dept">Department</label>
+                <select id="dept">
+                    <option>Engineering</option>
+                    <option>Human Resources</option>
+                    <option>Operations</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Observation Notes</label>
+                <textarea id="notes" rows="4" placeholder="Enter detailed observations...">
+                <div class="form-hint">Please keep remarks concise and objective.</div>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox"> I acknowledge the terms of data submission.
+                </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Record</button>
+        </form>
+    </div>
+
+</body>
+</html>
